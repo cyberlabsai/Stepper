@@ -1,0 +1,29 @@
+{
+  "name": "stepper",
+  "description": "Pure javascript simple queue manager",
+  "version": "1.0.0",
+  "author": "Luigui Delyer <luigui@cyberlabs.ai>",
+  "copyright": "Cyberlabs C 2019 - cyberlabs.ai",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "queue manager"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "major": "npm version major && npm run tag",
+    "minor": "npm version minor && npm run tag",
+    "patch": "npm version patch && npm run tag",
+    "tag": "git push --tags && git push",
+    "tag:force": "PACKAGE_VERSION=$(sed -n '/\"version\"/s/[^0-9.]//gp' package.json | tr -d '\n') && git tag v$PACKAGE_VERSION && git push --tags && git push"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^6.1.0",
+    "eslint-friendly-formatter": "^2.0.5",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "dependencies": {}
+}
