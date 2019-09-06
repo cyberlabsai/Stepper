@@ -3,7 +3,7 @@
   "description": "Pure javascript simple queue manager",
   "version": "1.0.0",
   "author": "Luigui Delyer <luigui@cyberlabs.ai>",
-  "copyright": "Cyberlabs C 2019 - cyberlabs.ai",
+  "copyright": "Cyberlabs (C) 2019 - cyberlabs.ai",
   "license": "MIT",
   "private": false,
   "keywords": [
